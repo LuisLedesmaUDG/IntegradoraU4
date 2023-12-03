@@ -1,0 +1,428 @@
+/* 
+Colores: 
+073B4C Azul oscuro
+118AB2 Teal 
+06D6A0 Verde
+FFD166 Amarillo 
+EF476F Rosa
+
+Azules
+3A1078  Oscuro
+4E31AA    |
+2F58CD    |
+3795BD  Claro
+
+*/
+
+/* Estilos Generales */
+*{
+    font-family: 'Nova Square', sans-serif;
+    margin: 0;
+    padding: 5px;
+}
+
+body{
+/*     border: 1px dotted red; */
+    margin-bottom: 0;
+    margin-top: 10px;
+    background-color: #073B4C;
+}
+
+h1{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    margin-bottom: 2px;
+    background-color: #0a4e64;
+    padding: 1px;
+/*     border: 1px solid blue; */
+    position: sticky;
+    top: 10px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+}
+
+div, footer{
+/*     border: 1px solid black; */
+    margin-bottom: 5px;
+}
+
+footer{
+    margin-bottom: 0;
+}
+
+img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+nav a, a{
+    text-decoration: none;
+    color: #06D6A0;
+}
+
+a:hover{
+    color: #EF476F;
+}
+
+strong{
+    color: #FFD166;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-around;
+}
+/* Estilos contenedor principal */
+#main{
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.contenedor1{
+    margin: 0;
+    background-color: #073B4C;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.heroDisplay{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.heroDisplay{
+    color: #06D6A0;
+    font-size: large;
+}
+
+.heroDisplay p{
+    padding: 2vw 4vw ;
+}
+
+.heroDisplay img{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+/* Estolos logo */
+.logo_container, .logo_container img{
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
+}
+
+.logo_container img{
+    width: 12em;
+}
+
+/* Estilo Botones */
+.boton{
+    display: flex;
+    justify-content: center;
+}
+.btn1{
+    margin: 0;
+    width: 300px;
+    font-size: large;
+    color: #073B4C;
+    background-color: #FFD166;
+    border: 3px solid black;
+}
+
+.btn1:hover{
+    margin: 0;
+    width: 300px;
+    font-size: large;
+    color: #073B4C;
+    background-color: #EF476F;
+    border: 3px solid black;
+}
+.btn1:active{
+    margin: 0;
+    width: 300px;
+    font-size: large;
+    color: #073B4C;
+    background-color: #06D6A0;
+    border: 3px solid black;
+}
+
+.btn2{
+    margin: 10px 0;
+    width: auto;
+    font-size: large;
+    color: #073B4C;
+    background-color: #FFD166;
+    border: 3px solid black;
+}
+
+.btn2:hover{
+    margin: 0;
+    width: auto;
+    font-size: large;
+    color: #073B4C;
+    background-color: #EF476F;
+    border: 3px solid black;
+}
+.btn2:active{
+    margin: 0;
+    width: auto;
+    font-size: large;
+    color: #073B4C;
+    background-color: #06D6A0;
+    border: 3px solid black;
+}
+
+
+/* Estilos Carrusel */
+#carrusel img{
+    margin: 5px;
+    width: 100%;
+}
+
+#carrusel {
+    border-radius: 15px;
+}
+
+.slick-dots li button:before {
+    color: #EF476F !important;
+    background-color: #06D6A0;
+    border-radius: 5px;
+  }
+
+.slick-track img{
+    border-radius: 10px;
+  }
+/* Botones */
+
+
+/* Estilo pie de página */
+.footer1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 15px;
+    background-color: #FFD166;
+    border-radius: 0 0 15px 15px;
+}
+
+.footer1 a{
+    text-decoration: none;
+}
+
+.footer1 a:hover{
+    color: #EF476F;
+}
+.footer1 a:focus{
+    color: #073B4C;
+}
+
+/* Imagen de fondo */
+body{
+    background-image:url('/img/opt/Planeta2_1-3_72_dpi.jpeg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:right bottom;
+    background-size: cover;
+}
+/* ICONS */
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+}
+.servicios a{
+    display: flex;
+    align-items: center;
+}
+.ICO{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background: url('/img/opt/Icons_opt_16bit.png');
+}
+.inspiracionICO{
+    background-position: -60px -64px;
+}
+.contactoICO{
+    background-position: -118px -68px;
+}
+.trabajosICO{
+    background-position: -235px -123px;
+}
+.contrataICO{
+    background-position: -403px -16px;
+}
+
+/* Trabajos Specific */
+.categorias{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.categorias a{
+    padding-left: 20px;
+}
+
+.categorias div{
+    color: #FFD166;
+    border-radius: 10px;
+    border: 2px solid #EF476F;
+    margin-right: auto;
+}
+
+/* Tarjetas */
+.contenedor2{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.listaPosiciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.tarjeta{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.tituloTarjeta{
+    color: #EF476F;
+}
+.parrafoTarjeta{
+    color: #06D6A0;
+
+}
+.seleccion{
+    text-align: right;
+    padding: 20px;
+}
+.seleccion p{
+    text-align: left;
+}
+
+.seleccion form, .credenciales, .credenciales2{
+    color: #06D6A0;
+}
+/* Sign in Specific */
+.contenedor3{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Login specifics */
+.contenedor4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.credenciales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: stretch;
+}
+.credenciales form{
+    width: 50%;
+    border-radius: 8px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.textarea{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+/* Inspiración Specifics */
+.contenedorTarjeta{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Contrata specifics */
+.credenciales2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.credenciales2 form{
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+}
+.small{
+    width: 50%;
+}
+
+/* Max-min media query */
+@media only screen and (min-width: 1144px){
+    #main{
+        width: 1024px;
+        margin: auto;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }  
+}
+
+@media only screen and (max-width: 600px){
+    #main{
+        width: 600px;
+        margin: auto;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    .listaPosiciones{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .contenedor2{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: auto;
+    }
+    .contenedorTarjeta{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }  
+}

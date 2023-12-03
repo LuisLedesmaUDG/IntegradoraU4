@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <title>Cat Potions</title>
+</head>
+<body>
+    <div id="main">
+        <nav>
+            <div class="logo_container">
+                <a href="/index.html"><img src="/img/Logo_Transparente.png" alt="Logo gato en cajita"></a>
+            </div>
+            <div class="servicios">
+                <a href="/inspiracion.html"><span class="ICO inspiracionICO"></span>Inspiracion</a>
+                <a href="/contacto.html"><span class="ICO contactoICO"></span>Contacto</a>
+                <a href="/trabajos.html"><span class="ICO trabajosICO"></span>Trabajos</a>
+                <a href="/contrata.html"><span class="ICO contrataICO"></span>Contrata</a>
+            </div>
+            <div class="menu"><a href="/signin.html">Sign-Up</a> / <a href="/login.html">Login</a>
+            </div>
+        </nav>
+        <div class="contenedor1">
+            <div class="heroDisplay">
+                <p>
+                    ¡Bienvenido a Cat Potions, el lugar donde la magia del diseño web se encuentra con la esencia felina! En Cat Potions, no solo creamos sitios web, creamos experiencias mágicas que capturan la esencia única de tu marca. ¿Listo para sumergirte en un mundo donde la creatividad fluye como un hechizo y cada diseño es una poción única? Descubre el encanto de Cat Potions y deja que tus ideas cobren vida con un toque de magia felina. ¡Prepárate para una travesía visual extraordinaria en el universo de Cat Potions, donde la creatividad y la innovación se mezclan con la elegancia felina!
+                </p>
+                <img src="/img/opt/Consola_Optimized.png" alt="Imagen de display">
+            </div>
+        </div>
+        <div class="boton"><button class="btn1" onclick="handleClick()">Contrata</button></div>
+        <div id="carrusel">
+            <div><img src="/img/imagen1.jpeg" alt="Imagen 1"></div>
+            <div><img src="/img/imagen2.GIF" alt="Imagen 2"></div>
+            <div><img src="/img/imagen3.jpeg" alt="Imagen 3"></div>
+            <div><img src="/img/imagen4.png" alt="Imagen 9"></div>
+            <div><img src="/img/imagen5.gif" alt="Imagen 4"></div>
+            <div><img src="/img/imagen6.gif" alt="Imagen 5"></div>
+            <div><img src="/img/imagen7.jpeg" alt="Imagen 6"></div>
+            <div><img src="/img/imagen8.jpeg" alt="Imagen 7"></div>
+            <div><img src="/img/imagen9.jpeg" alt="Imagen 8"></div>
+            <div><img src="/img/imagen10.png" alt="Imagen 10"></div>
+        </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('#carrusel').slick({
+                        centerMode: true,
+                        centerPadding: '10px',
+                        autoplay: true, // Reproducción automática
+                        autoplaySpeed: 5000, // Velocidad de reproducción automática en milisegundos
+                        dots: true, // Muestra los puntos de navegación
+                        infinite: true, // Bucle infinito
+                        speed: 400, // Velocidad de transición en milisegundos
+                        slidesToShow:3, // Número de diapositivas a mostrar a la vez
+                        slidesToScroll: 3 // Número de diapositivas a desplazarse al avanzar/retroceder
+                    });
+                });
+            </script>
+        <footer class="footer1">
+            <div>
+                <h2>Contacto</h2>
+                <p>Dirección: Calle de las Pócimas, 123</p>
+                <p>Teléfono: +01 234 567 890</p>
+                <p>Email: info@catpotions.com</p>
+            </div>
+            <div>
+                <h2>Redes Sociales</h2>
+                <br>
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">Instagram</a>
+            </div>
+            <div>
+                <h2>Horario</h2>
+                <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                <p>Sábado: 10:00 AM - 2:00 PM</p>
+            </div>
+        </footer>
+    </div> 
+</body>
+<script>
+    function handleClick() {
+        console.log('Click en el botón');
+        window.location.href = 'contrata.html';
+    }
+</script>
+</html>

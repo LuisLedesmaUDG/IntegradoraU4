@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <title>Contrata</title>
+</head>
+<body>
+    <div id="main">
+        <nav>
+            <div class="logo_container">
+                <a href="/index.html"><img src="/img/Logo_Transparente.png" alt="Logo gato en cajita"></a>
+            </div>
+            <div class="servicios">
+                <a href="/inspiracion.html"><span class="ICO inspiracionICO"></span>Inspiracion</a>
+                <a href="/contacto.html"><span class="ICO contactoICO"></span>Contacto</a>
+                <a href="/trabajos.html"><span class="ICO trabajosICO"></span>Trabajos</a>
+                <a href="/contrata.html"><span class="ICO contrataICO"></span>Contrata</a>
+            </div>
+            <div class="menu"><a href="/signin.html">Sign-Up</a> / <a href="/login.html">Login</a>
+            </div>
+        </nav>
+        <div class="contenedor1">
+            <div class="heroDisplay">
+                <p>¡Estamos emocionados de ser parte de tu viaje creativo! En Cat Potions, estamos listos para convertir tus visiones en realidad digital. Si estás buscando servicios de diseño web que destaquen, desarrollo con un toque mágico, o soluciones digitales que encanten a tu audiencia, estás en el lugar correcto.
+
+                    Nuestro equipo altamente capacitado y apasionado en Cat Potions está listo para personalizar soluciones que se adapten perfectamente a tus necesidades. Desde el primer contacto hasta la implementación final, nos comprometemos a ofrecerte una experiencia excepcional.
+                    
+                    ¡Déjanos ser tus creadores digitales! Ponte en contacto con nosotros hoy mismo para discutir cómo podemos hacer realidad tus proyectos y llevarlos al siguiente nivel. ¡La magia de Cat Potions espera por ti!
+                </p>
+            </div>
+            <div class="contenedor1">
+                <div class="credenciales2">
+                    <form action="#">
+                        <label for="nombre">Nombre(s)</label>
+                        <input type="text" id="nombre" name="nombre">
+                        <label for="apellido">Apellido(s)</label>
+                        <input type="text" name="apellido" id="apellido">
+                        <label for="correo">Correo</label>
+                        <input type="email" name="correo" id="correo">
+                        <label for="detalles">Detalles del proyecto</label>
+                        <textarea class="textarea" name="detalles" id="detalles" cols="30" rows="10"></textarea>
+                        <label for="urgencia">¿Que tan urgente es?</label><br>
+                        <div><label for="Baja">Poco</label>
+                            <input type="radio" name="urgencia" id="Baja" value="Baja" checked/></div>
+                        <div><label for="Media">Algo</label>
+                            <input type="radio" name="urgencia" id="Media" value="Media"/></div>
+                        <div><label for="Alta">Muy</label>
+                            <input type="radio" name="urgencia" id="Alta" value="Alta"/></div>
+                        <label for="servicios">¿Te interesa alguno de los siguientes servicios?</label>
+                             
+                        <div><input type="checkbox" name="Diseño" id="Diseño">
+                            <label for="Diseño">Diseño</label>
+                        </div>
+                        <div><input type="checkbox" name="Mantenimiento" id="Mantenimiento">
+                            <label for="Mantenimiento">Mantenimiento</label>
+                        </div>
+                        <div><input type="checkbox" name="SEO" id="SEO">
+                            <label for="SEO">SEO</label>
+                        </div>
+                        <div><input type="checkbox" name="Redes" id="Redes">
+                            <label for="Redes">Redes</label>
+                        </div>
+                        <div><input type="checkbox" name="Soporte" id="Soporte">
+                            <label for="Soporte">Soporte</label>
+                        </div>
+                    </form>
+                </div>
+                <br>
+                <div class="boton"><button id="btnEnviar" class="btn1">Contrata</button></div>
+                <br>     
+            </div>        
+        </div>
+        <footer class="footer1">
+            <div>
+                <h2>Contacto</h2>
+                <p>Dirección: Calle de las Pócimas, 123</p>
+                <p>Teléfono: +01 234 567 890</p>
+                <p>Email: info@catpotions.com</p>
+            </div>
+            <div>
+                <h2>Redes Sociales</h2>
+                <br>
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">Instagram</a>
+            </div>
+            <div>
+                <h2>Horario</h2>
+                <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                <p>Sábado: 10:00 AM - 2:00 PM</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./form.js"></script>
+</body>
+</html>
